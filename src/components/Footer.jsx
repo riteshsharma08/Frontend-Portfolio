@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import { FiGithub, FiLinkedin, FiTwitter, FiInstagram, FiMail, FiPhone } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiInstagram, FiMail, FiPhone } from "react-icons/fi";
 import { getProfile } from "../api/api";
 import "./Footer.css";
 
 const DEFAULT_SOCIAL = {
   github: "#",
   linkedin: "#",
-  twitter: "#",
   instagram: "#",
 };
 
@@ -48,9 +47,7 @@ export default function Footer() {
             <a href={social.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <FiLinkedin />
             </a>
-            <a href={social.twitter} target="_blank" rel="noreferrer" aria-label="Twitter">
-              <FiTwitter />
-            </a>
+            
             <a href={social.instagram} target="_blank" rel="noreferrer" aria-label="Instagram">
               <FiInstagram />
             </a>
